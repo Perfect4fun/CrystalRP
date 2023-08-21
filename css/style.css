@@ -8,8 +8,8 @@
 :root {
     --font-pricedown: 'pricedown', arial;
 
-    --bg-color: #4f26d5;
-    --color-secondary: #231879;
+    --bg-color: #2a1276;
+    --color-secondary: #1c145b;
 }
 
 * {
@@ -131,7 +131,7 @@ body {
 
 .comParceria {
     font-family: var(--font-pricedown);
-    color: green;
+    color: #2d7e2d;
     text-align: center;
     margin: 0px 0px 20px 0px;
     font-size: 3em;
@@ -148,7 +148,7 @@ body {
 
 .semParceria {
     font-family: var(--font-pricedown);
-    color: red;
+    color: #ce2929;
     text-align: center;
     padding: 20px 0px;
     border-top: 2px solid gray;
@@ -259,12 +259,12 @@ body {
     border-bottom: none;
 }
 
-.credit {
+/* .credit {
     text-align: center;
     background-color: transparent;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8em;
-}
+} */
 a {
     color: white;
 }
