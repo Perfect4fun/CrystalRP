@@ -1,0 +1,447 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'pricedown';  
+    src: url('../fonte/pricedown.otf') format('opentype');
+}
+
+:root {
+    --font-pricedown: 'pricedown', arial;
+
+    --bg-color: #4f26d5;
+    --color-secondary: #231879;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.blocos {
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: var(--bg-color);
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    background-image: url('../imagens/cidadeGta.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.blocoCima {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0px;
+    align-items: center;
+    margin: 20px 40px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-secondary);
+    justify-content: center;
+    padding: 60px;
+    gap: 10px;
+    font-size: 3em;
+    border-radius: 8px;
+    font-family: var(--font-pricedown);
+    width: 600px;
+}
+
+.input {
+    width: 100%;
+    height: 46px;
+    font-size: large;
+    padding: 20px;
+    border: 0px;
+    border-radius: 10px;   
+    outline: none;
+}
+
+#porcentError {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 500px;
+    font-size: 0.4em;
+    color: red;
+    max-width: 680px;
+    margin: 10px 0px -10px 0px;
+    display: flex;
+}
+
+#dinheiroError {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 500px;
+    font-size: 0.4em;
+    color: red;
+    max-width: 680px;
+    margin: 10px 0px -10px 0px;
+    display: flex;
+}
+
+.lavarDinheiro {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 0px;
+    margin-top: 20px;
+    font-size: 0.4em;
+    font-family: var(--font-pricedown);
+    font-size: 0.6em;
+    color: var(--color-secondary);
+}
+
+.lavarDinheiro:hover {
+    background-image: url('../imagens/gif-dinheiro');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.divParceria {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-secondary);
+    justify-content: center;
+    padding: 60px;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.comParceria {
+    font-family: var(--font-pricedown);
+    color: green;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+    font-size: 3em;
+}
+
+.pComParceria {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid gray;
+    font-size: 1.4em;
+}
+
+.semParceria {
+    font-family: var(--font-pricedown);
+    color: red;
+    text-align: center;
+    padding: 20px 0px;
+    border-top: 2px solid gray;
+    font-size: 3em;
+}
+
+.pSemParceria {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.4em;
+}
+
+.ou {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.4em;
+}
+
+.comentario {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    background-color: var(--color-secondary);
+    padding: 50px;
+    border-radius: 8px;
+    align-items: center;
+    text-align: center;
+}
+
+.imgComentario {
+    margin: 30px 0px -20px 0px;
+    width: 220px;
+}
+
+.blocoResults {
+    display: flex;
+    border-radius: 10px;
+    padding: 40px;
+    background-color: var(--bg-color);
+    gap: 40px;
+    border: 4px solid ;
+    justify-content: space-evenly;
+    margin: 0px 40px 0px 40px;
+}
+
+.results {
+    font-family: var(--font-pricedown);
+    font-size: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.resultDinheiro {
+    width: 100%;
+    font-family: var(--font-pricedown);
+    border: none;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    background-color: transparent;
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+    background-color: var(--bg-color);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgDiamante {
+    margin: auto;
+    width: 140px;
+}
+
+.divCopy {
+    margin: 0px 40px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.copy-btn {
+    background-color: white;
+    color:  var(--bg-color);
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    border: 4px solid white;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 100%;
+}
+
+.copy-btn:hover {
+    background-color: var(--bg-color);
+    color: white;
+}
+
+.modificadBlocoResults {
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: none;
+}
+
+.credit {
+    text-align: center;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+a {
+    color: white;
+}
+
+@media (max-width: 1800px) {
+    .blocoCima {
+        font-size: 0.9em;
+    }
+    .lavarDinheiro {
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width: 1730) {
+    .blocoCima {
+        font-size: 0.9em;
+    }
+    .inputs {
+        width: 500px;
+    }
+    .lavarDinheiro {
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width: 1670px) {
+    .blocoCima {
+        font-size: 0.8em;
+    }
+
+    .inputs {
+        width: 480px;
+    }
+    .lavarDinheiro {
+        font-size: 0.6em;
+    }
+    
+    .blocoResults {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 1500px) {
+    .blocoResults {
+        font-size: 0.8em;
+        padding: 30px;
+    }
+
+    .inputs {
+        width: 460px;
+        padding: 50px;
+    }
+
+    .divParceria {
+        padding: 50px;
+    }
+
+    .blocoCima {
+        font-size: 0.7em;
+    }
+
+    .comentario {
+        padding: 40px;
+    }
+
+    .imgComentario {
+        width: 120px;
+    }
+}
+
+@media (max-width: 1359px) {
+    .inputs {
+        width: 100%;
+        padding: 30px;
+        grid-area: inputs;
+    }
+
+    .input {
+        padding: 12px;
+    }
+
+    .blocoResults {
+        font-size: 0.7em;
+        padding: 30px;
+    }
+    
+    .blocoCima {
+       display: grid;
+       grid-template-areas: 
+       "inputs parceria"
+       "comentario parceria";
+       gap: 20px;
+    }
+
+    .input {
+        height: 40px;
+    }
+
+    .lavarDinheiro {
+        font-size: 0.8em;
+    }
+
+    .divParceria {
+        grid-area: parceria;
+        font-size: 1.3em;
+    }
+
+    .comentario {
+        margin-top: -10px;
+        flex-direction: row;
+        width: 100%;
+        grid-area: comentario;
+        padding: 30px;
+        text-align: left;
+    }
+    .imgComentario {
+        margin-top: 0px;
+        margin: auto;
+        margin: 0px 0px 0px 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .blocoResults {
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width: 1120px) {
+    .divParceria {
+        font-size: 1em;
+    }
+    .inputs {
+        max-width: 460px;
+    }
+    .lavarDinheiro {
+        padding: 12px;
+    }
+    .comentario {
+        font-size: 1.1em;
+        max-width: 460px;
+    }
+    .blocoResults {
+        padding: 30px 0px ;
+    }
+}
+
+@media (max-width: 1080px) {
+    .inputs {
+        max-width: 400px;
+    }
+    .comentario {
+        max-width: 460px;
+        justify-content: center;
+    }
+    .imgComentario {
+        display: none;
+    }
+
+    .blocoResults {
+        gap: 4px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .blocoResults {
+        flex-direction: column;
+    }
+
+    .results {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 872px) {
+    .blocoCima {
+        display: flex;
+        flex-direction: column;
+    }
+}

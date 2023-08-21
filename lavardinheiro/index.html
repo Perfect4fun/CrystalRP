@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../imagens/crystal-logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>CrystalRP</title>
+</head>
+<body>
+    <div class="container">
+        <header class="blocos header">
+            <div><img src="../imagens/crystal-logo3.png" alt="" srcset=""></div>
+        </header>
+        <main class="blocos main">
+            <div class="blocoCima">
+                <div class="inputs">
+                    <div>
+                        <label class="label" for="dinheiroSujo">Dinheiro Sujo:</label>
+                        <input class="input" type="text" id="dinheiroSujo" maxlength="12" required>
+                        <span class="dinErr" id="dinheiroError"></span>
+                    </div>
+                    <div>
+                        <label class="label" for="porcentagem">Porcentagem:</label>
+                        <input class="input" type="text" id="porcentagem" required min="30" max="100" maxlength="3">
+                        <span class="err" id="porcentError"></span>
+                    </div>
+                    <button id="lavarDinheiro" class="lavarDinheiro">Lavar Dinheiro</button>
+                </div>
+                <div class="divParceria">
+                    <h2 class="comParceria">COM PARCERIA</h2>
+                    <div class="pComParceria">
+                        <p>30% para quem lavou <br>
+                        70% para quem levou o dinheiro sujo</p>
+                    </div>
+                    <h2 class="semParceria">SEM PARCERIA</h2>
+                    <p class="pSemParceria">
+                        40% para quem lavou <br>
+                        60% para quem levou o dinheiro sujo
+                    </p>
+                    <p class="ou">OU</p>
+                    <p class="pSemParceria">
+                        50% para quem lavou <br>
+                        50% para quem levou o dinheiro sujo
+                    </p>
+                </div>
+                <div class="comentario">
+                    <p class="pComentario"><u>
+                        Essas porcentagens de SEM PARCERIA</h3>, <br> <br>
+                            são apenas sugestões, vocês podem decidir <br> <br>
+                            qualquer porcentagem que seja acima de 30%
+                    </u></p>
+                    <img class="imgComentario" src="../imagens/crystal-logo2.png" alt="">
+                </div>
+            </div>
+            <div class="blocoResults">
+                <div class="results results1">
+                    <p>Dinheiro pra máquina: </p>
+                </div>
+                <div class="results results2">
+                    <p>Dinheiro pro cliente: </p>
+                </div>
+                <div class="results results3">
+                    <p>Dinheiro pra facção: </p>
+                </div>
+            </div>
+            <div class="divCopy">
+                <span id="spanBtnCopy"></span>
+            </div>
+            <p class="credit">Feito por <a href="https://www.instagram.com/guillins15/">Guilherme Lins</a> (<a href="https://github.com/Kinz2901">Kinz</a>)</p>
+        </main>
+        <footer class="blocos footer"><img class="imgDiamante" src="../imagens/crystal-logo.png" alt="" srcset=""></footer>
+    </div>
+    <script src="../js/index.js"></script>
+</body>
+</html>
